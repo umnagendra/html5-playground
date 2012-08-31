@@ -1,0 +1,103 @@
+/* HTML5 Playground
+   File: 	storage.css
+   Author:	Nagendra U M
+*/
+@CHARSET "UTF-8";
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ul {
+	list-style-type: square;
+}
+
+#container {
+	width: 600px;
+	/*margin: 0 auto;*/
+}
+
+.paper {
+	position: relative;
+	height: 400px;
+	width: 500px;
+	background-color: #faf8e5;
+	border: 1px solid #e3e3e3;
+}
+
+ul#lines li {
+	height: 30px;
+	line-height: 30px;
+	color: #4d84c8;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 14px;
+	width: 450px;
+	border-top: 1px solid #f2f0df;
+	padding-left: 15px;
+}
+
+.stickyTitle {
+	height: 30px;
+	line-height: 30px;
+	color: #993300;
+	font-family: Georgia;
+	font-style: normal;
+	font-size: 24px;
+	font-weight: bold;
+	width: 275px;
+	border-top: 1px solid #f2f0df;
+	padding-left: 25px;
+}
+
+#scratchpad {
+	position: relative;
+	height: 400px;
+	width: 500px;
+	border: 2px solid black;
+	border-style: ridge;
+	font-family: Courier New, monospace;
+	font-size: 16px;
+	word-wrap: break-word;
+	overflow: auto;
+	background-color: black;
+	color: lime;
+}
+
+#employeeTable {
+	position: relative;
+	overflow: auto;
+	font-family: Courier New, monospace;
+	font-size:16px;
+	color:#333333;
+	border-width: 10px;
+	border-color: #666666;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.employeeTableHeader {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+.employeeTableData {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}

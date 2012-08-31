@@ -1,0 +1,83 @@
+/* HTML5 Playground
+   File: 	semantics.css
+   Author:	Nagendra U M
+*/
+@CHARSET "UTF-8";
+
+#sidebar {
+	font-family: Helvetica, sans-serif;
+	font-size: small;
+	float: right;
+	width: auto;
+	background: #ddd;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+}
+
+#cssmenu {
+	background: #333;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 12em;
+}
+
+#cssmenu li {
+	font: 100% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#cssmenu a {
+	background: #333;
+	border-bottom: 1px solid #393939;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+#cssmenu a:hover {
+	background: #2580a2 url('../images/hover.gif') left center no-repeat;
+	color: #fff;
+	padding-bottom: 8px;
+}
+
+.tabletext {
+	font-size: 14px;
+}
+
+.tableSemElement {
+	padding-left: 40px;
+}
+
+meter, progress {
+	width: 300px;
+}
+
+.specialText {
+	font-family: Courier New, monospace;
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+}
+
+[required] {
+	border-color: #88a;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+}
+
+:invalid {
+	border-color: #44a;
+	border: 6px solid #ff0000;
+}
+
+.rangeTicker {
+	font-family: Courier New, monospace;
+	font-size: 20px;
+	font-weight: lighter;
+	color: blue;
+	border: 1px solid black;
+}

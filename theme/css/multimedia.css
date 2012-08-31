@@ -1,0 +1,21 @@
+/* HTML5 Playground
+   File: 	multimedia.css
+   Author:	Nagendra U M
+*/
+@CHARSET "UTF-8";
+
+canvas {
+	text-align: center;
+	width: 640px;
+	height: 400px;
+	background-color: silver;
+	border: threeddarkshadow;
+	border-color: black;
+	border-style: groove;
+}
+
+video {
+	volume: x-loud;
+	margin-left: auto;
+	margin-right: auto;
+}

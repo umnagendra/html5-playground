@@ -1,0 +1,97 @@
+/* HTML5 Playground
+   File: 	hardware.css
+   Author:	Nagendra U M
+*/
+@CHARSET "UTF-8";
+
+.text-info {
+	font: normal;
+	font-family: monospace;
+	font-size: medium;
+	font-weight: normal;
+	text-align: left;
+	border-color: blue;
+	border-style: groove;
+	border-width: medium;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+
+.text-info-values {
+	color: red;
+	font-weight: bold;
+	font-size: large;
+	text-decoration: underline;
+}
+
+.map-area {
+	width: 500px;
+	height: 300px;
+	border: 1px solid #efefef;
+	-moz-box-shadow: 5px 5px 10px #000;
+	-webkit-box-shadow: 5px 5px 10px #000;
+}
+
+#dropzone {
+	height: 150px;
+	width: 100%;
+	font: normal;
+	font-family: monospace;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	border-color: gray;
+	border-style: dashed;
+	border-width: thick;
+	border-radius: 8px;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px;
+}
+
+fieldset { 
+	padding:0; border:0; margin-top:25px; 
+}
+
+#blanket {
+	background-color: #111;
+	opacity: 0.65;
+	*background: none;
+	position: absolute;
+	z-index: 9001;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#popUpDiv {
+	position: absolute;
+	background: yellow;
+	width: 800px;
+	height: 600px;
+	border: 5px solid #000;
+	z-index: 9002;
+	word-wrap: break-word;
+	overflow-y: scroll;
+}
+
+.popup-text {
+	font: Courier New, monospace;
+	font-size: x-small;
+}
+
+.popup-title {
+	font: Courier New, monospace;
+	font-size: small;
+	text-align: left;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+video {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	border: 1px solid #ccc;
+}
