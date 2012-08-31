@@ -1,0 +1,57 @@
+<!-- HTML5 Playground
+File:	index.html
+Author: Nagendra U M
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="../theme/css/main.css" type="text/css" rel="stylesheet">
+	<script src="../js/thirdparty/jquery-1.7.2.min.js"></script>
+	<script src="../js/thirdparty/modernizr.min.js" type="text/javascript"></script>
+	<script src="../js/main.js" type="text/javascript" ></script>
+	<title>HTML5 Playground - Nagendra U M</title>
+</head>
+<body>
+	<header class="main-header">
+		<hgroup>
+			<table style="width: 100%">
+				<tr>
+					<td style="width: 15%;"><img src="../theme/images/html5logo.png"></td>
+					<td style="width: 85%; text-align: center;">
+						<h1>HTML5 Playground</h1>
+					</td>
+				</tr>
+			</table>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="storage.html">Offline/Storage</a></li>
+			<li><a href="communication.html">Realtime/Communication</a></li>
+			<li><a href="hardware.html">File/Hardware Access</a></li>
+			<li><a href="semantics.html">Semantics and Markup</a></li>
+			<li><a href="multimedia.html">Graphics/Multimedia</a></li>
+			<li><a href="misc.html">Misc.</a></li>
+		</ul>
+	</nav>
+	<section id="articles">
+		<article>
+			<header>
+				<h3>
+					<a href="#" onclick="showBrowserSupport()">Which HTML5 features does my browser support?</a>
+				</h3>
+			</header>
+			<section id="supportedHtml5FeaturesSection">
+				<ul id="supportedHtml5FeaturesList">
+				<!-- Supported HTML5 feature list will be populated by showBrowserSupport() -->
+				</ul>
+			</section>
+		</article>
+	</section>
+	<footer>
+		<p>&#169; 2012 <a href="http://gplus.to/umnagendra">Nagendra U M</a></p>
+		<img alt="Powered by HTML5" src="../theme/images/html5badge.png" title="Powered by HTML5">
+	</footer>
+</body>
+</html>

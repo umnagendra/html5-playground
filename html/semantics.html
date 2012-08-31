@@ -1,0 +1,156 @@
+<!-- HTML5 Playground
+File:	semantics.html
+Author: Nagendra U M
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="../theme/css/main.css" type="text/css" rel="stylesheet">
+	<link href="../theme/css/semantics.css" type="text/css" rel="stylesheet">
+	<script src="../js/thirdparty/modernizr.min.js" type="text/javascript"></script>
+	<script src="../js/thirdparty/jquery-1.7.2.min.js"></script>
+	<script src="../js/semantics.js" type="text/javascript" ></script>
+	<title>HTML5 Playground - Nagendra U M - Semantics and Markup Demo</title>
+</head>
+<body onload="thingsToDoOnload();">
+	<header class="main-header">
+		<hgroup>
+			<table style="width: 100%">
+				<tr>
+					<td style="width: 15%;"><img src="../theme/images/html5logo.png"></td>
+					<td style="width: 85%; text-align: center;">
+						<h1>HTML5 Playground</h1>
+						<h3>Semantics and Markup Features</h3>
+					</td>
+				</tr>
+			</table>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="storage.html">Offline/Storage</a></li>
+			<li><a href="communication.html">Realtime/Communication</a></li>
+			<li><a href="hardware.html">File/Hardware Access</a></li>
+			<li><a href="semantics.html">Semantics and Markup</a></li>
+			<li><a href="multimedia.html">Graphics/Multimedia</a></li>
+			<li><a href="misc.html">Misc.</a></li>
+		</ul>
+	</nav>
+	<aside id="cssmenu">
+		<ul id="sidebarList">
+			<li><a ref="external" href="http://www.w3schools.com/html5">W3Schools HTML5</a></li>
+			<li><a ref="external" href="http://html5demos.com">HTML5 Demos</a></li>
+			<li><a ref="external" href="http://validator.w3.org">W3C HTML5 Validator</a></li>
+			<li><a ref="external" href="http://w3.org/TR/2010/WD-html5-20100624">W3C HTML5 Specifications</a></li>
+			<li><a ref="external" href="https://code.google.com/p/html5-playground/">My example sources</a></li>
+		</ul>
+	</aside>
+	<section id="semanticElements">
+		<article id="newElements">
+			<header>
+				<h2>New Elements</h2>
+			</header>
+			<table style="border: 1px solid;">
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;progress&gt;</span> Indicator - Indicates that 
+						<input id="progressPercentage" type="number" min="0" maxlength="3" max="100" value="55" onchange="updateProgressBar();">
+						% of a task is completed:
+					</td>
+					<td class="tableSemElement">
+						<progress id="progressbar" max="100" value="55">55% Downloading...</progress>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;meter&gt;</span> - to represent output values: 
+						<input id="meterInput" type="number" min="0" maxlength="1" max="8" value="4" onchange="updateMeter();"> 
+						out of 8 units:
+					</td>
+					<td class="tableSemElement">
+						<meter id="meterbar" value="4" high="6" low="2" max="8" min="0">4 out of 8 units</meter>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						Auto-complete <span class="specialText">&lt;datalist&gt;</span> - Enter ccx-mafia member name:
+					</td>
+					<td class="tableSemElement">
+						<input id="mafiaMember" type="text" list="mafiaMembers" value="start typing to see auto-complete suggestions..." size="44" onfocus="clearAutocompleteText();" onblur="putAutocompleteText();">
+						<datalist id="mafiaMembers">
+							<option value="Nagendra">
+							<option value="Prateek">
+							<option value="Shidhartha">
+							<option value="Ravi">
+							<option value="Sandip">
+						</datalist>
+					</td>
+				</tr>
+			</table>
+		</article>
+		<article id="newInputTypes">
+			<header>
+				<h2>New Input Types</h2>
+			</header>
+			<table style="border: 1px solid;">
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='email'&gt;</span> - To input Email IDs (Inbuilt validation etc.):
+					</td>
+					<td class="tableSemElement">
+						<input id="emailInput" type="email" value="address@provider.com" required="required" size="44"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='date'&gt;</span> - To input date values:
+					</td>
+					<td class="tableSemElement">
+						<input type="date" min="2000-01-01" max="2020-12-31" placeholder="2012-08-23"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='range'&gt;</span> - To select a value in a given range:
+					</td>
+					<td class="tableSemElement">
+						<input id="rangeInput" type="range" min="0" max="50" value="10" onchange="updateRange();"/> &nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="rangeOutput" class="rangeTicker">10</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='color'&gt;</span> - To select a color from a palette:
+					</td>
+					<td class="tableSemElement">
+						<input id="colorInput" type="color" placeholder="#bbbbbb" onchange="updateColor();"/> &nbsp;&nbsp;&nbsp;&nbsp;
+						<span id="colorOutput" class="rangeTicker">#bbbbbb</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='number'&gt;</span> - To select from a list of numbers:
+					</td>
+					<td class="tableSemElement">
+						<input id="numberInput" type="number" max="100" min="0" maxlength="3" step="5" value="5" required="required"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletext">
+						<span class="specialText">&lt;input type='url'&gt;</span> - To input URLs (Inbuilt validation etc.):
+					</td>
+					<td class="tableSemElement">
+						<!-- The below validation regex has not been tested. Might as well be junk -->
+						<input id="urlinput" type="url"  value="http://myhost.domain.com/resource" pattern="^http://[a-zA-Z]([a-zA-Z0-9\-_?#/]*\.[a-zA-Z0-9\-_?#/]+)*$" size="44"/>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<footer>
+		<p>&#169; 2012 <a href="http://gplus.to/umnagendra">Nagendra U M</a></p>
+		<img alt="Powered by HTML5" src="../theme/images/html5badge.png" title="Powered by HTML5">
+	</footer>
+</body>
+</html>

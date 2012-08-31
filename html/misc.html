@@ -1,0 +1,80 @@
+<!-- HTML5 Playground
+File:	misc.html
+Author: Nagendra U M
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="../theme/css/main.css" type="text/css" rel="stylesheet">
+	<link href="../theme/css/misc.css" type="text/css" rel="stylesheet">
+	<script src="../js/thirdparty/modernizr.min.js" type="text/javascript"></script>
+	<script src="../js/thirdparty/jquery-1.7.2.min.js"></script>
+	<script src="../js/misc.js" type="text/javascript" ></script>
+	<title>HTML5 Playground - Nagendra U M - Misc. Demo</title>
+</head>
+<body onload="thingsToDoOnload();">
+	<header class="main-header">
+		<hgroup>
+			<table style="width: 100%">
+				<tr>
+					<td style="width: 15%;"><img src="../theme/images/html5logo.png"></td>
+					<td style="width: 85%; text-align: center;">
+						<h1>HTML5 Playground</h1>
+						<h3>Misc. Features</h3>
+					</td>
+				</tr>
+			</table>
+		</hgroup>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="storage.html">Offline/Storage</a></li>
+			<li><a href="communication.html">Realtime/Communication</a></li>
+			<li><a href="hardware.html">File/Hardware Access</a></li>
+			<li><a href="semantics.html">Semantics and Markup</a></li>
+			<li><a href="multimedia.html">Graphics/Multimedia</a></li>
+			<li><a href="misc.html">Misc.</a></li>
+		</ul>
+	</nav>
+	<section id="pageVisibility">
+		<article id="pageVisibilityDemo">
+			<header>
+				<h2>Page Visibility API</h2>
+			</header>
+			<div id="audioText">This audio stream will play only as long as you are viewing this page.</div>
+			<br/>
+			<audio id="pageVisibilityAudio" src="../media/furelise.mp3" controls="controls" preload="auto" onplay="startPlaying();">Your browser does not support HTML5 audio.</audio>
+		</article>
+	</section>
+	<section id="css3">
+		<article id="css3Demo">
+			<header>
+				<h2>CSS3 Demos</h2>
+			</header>
+			<table class="full-width-table">
+				<tr>
+					<td>
+						<div id="outerDiv">
+							<div id="innerDiv" class="default">CSS3 Demo</div>
+						</div>
+					</td>
+					<td style="vertical-align: top;">
+						<label for="rotateDiv">Animations:</label>
+						<input id="rotateDiv" type="button" onclick="rotateDiv();" value="Rotate" class = "styled-button"/>&nbsp;&nbsp;
+						<input id="fadeOut" type="button" onclick="fadeOut();" value="Fade Out" class = "styled-button"/>&nbsp;&nbsp;
+						<input id="fadeIn" type="button" onclick="fadeIn();" value="Fade In" class = "styled-button"/>
+						<hr/>
+						<label for="rotateDiv">Box Transforms:</label>
+						<input id="boxTransforms" type="button" onclick="applyBoxTransforms();" value="Apply Box Transforms" class = "styled-button"/>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<footer>
+		<p>&#169; 2012 <a href="http://gplus.to/umnagendra">Nagendra U M</a></p>
+		<img alt="Powered by HTML5" src="../theme/images/html5badge.png" title="Powered by HTML5">
+	</footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# version 1.0.0
+
+# Explicitly cached files
+CACHE:
+storage.html
+js/storage.js
+js/main.js
+js/thirdparty/jquery-1.7.2.min.js
+js/thirdparty/modernizr.min.js
+theme/css/storage.css
+theme/css/main.css
+theme/images/html5badge.png
+theme/images/html5logo.png
+theme/images/icon-html5-logo.png
+
+NETWORK:
+*
